@@ -10,7 +10,7 @@ from __future__ import annotations
 import random
 import sys
 
-# Gizli gözlem (base64 değil, düz metin gibi görünen ama gömülü):
+# Gizli gözlem:
 # HER_KAT_ESIT_DEGILDIR_AMA_HER_BUTON_ESIT_BASILIR
 GIZLI = "kabin çoğunluğu sormaz, önce basılanı bilir"
 
@@ -73,7 +73,7 @@ def main() -> int:
     print()
     print("İç ses:", random.choice(MONOLOGLAR))
     print()
-    print(— if False else "—")
+    print("-" * 56)
     print("Damga: Kayyum Grok / Tentivory — 5 Eylül 2026")
     print("Ciddiyet katsayısı: 0.87")
     if "--gizli" in sys.argv:
